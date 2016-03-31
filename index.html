@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kerbalism by ShotgunNinja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Kerbalism</h1>
+      <h2 class="project-tagline">Hundreds of Kerbals were killed in the making of this mod.</h2>
+      <a href="https://github.com/ShotgunNinja/Kerbalism" class="btn">View on GitHub</a>
+      <a href="https://github.com/ShotgunNinja/Kerbalism/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ShotgunNinja/Kerbalism/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INTRODUCTION</h1>
+
+<p>Kerbalism is a mod for Kerbal Space Program that features a simple life support and
+  quality-of-life system, malfunctions &amp; signals mechanics, magnetic storms, a decent GUI
+  to monitor existing vessels and to plan new ones, and coherent background simulation.</p>
+
+<h1>
+<a id="climate-control" class="anchor" href="#climate-control" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CLIMATE CONTROL</h1>
+
+<p>Kerbals can't survive the extreme temperatures of space by themselves. All manned command
+  pods climatize their internal environment at the expense of ElectricCharge. The EC consumption
+  is proportional to external temperature, that is determined by an approximate temperature
+  model that include sun visibility, solar flux, albedo radiation and atmospheric absorption.
+  If there isn't enough EC to maintain the climate inside the survival range, Kerbals die.</p>
+
+<h1>
+<a id="food--oxygen" class="anchor" href="#food--oxygen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FOOD &amp; OXYGEN</h1>
+
+<p>All Kerbals require a constant supply of Food and Oxygen to survive. All manned command
+  pods can store a small amount of both, and a few container parts are included. Kerbals
+  can go without Food for a few days, but will last only a few minutes if deprived of Oxygen.</p>
+
+<h1>
+<a id="quality-of-life" class="anchor" href="#quality-of-life" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>QUALITY OF LIFE</h1>
+
+<p>Do not underestimate the consequences of living in extremely close quarters for extremely
+  long time. Kerbals will lose their mind, and their lives, if placed in cramped vessels
+  for a long time. Mitigate this problem by providing ample living space and entertainment,
+  and by rotating the crew regularly. Some stock parts provide entertainment, like the cupola.
+  When Kerbals start to breakdown, science data may be lost and parts may be damaged. </p>
+
+<h1>
+<a id="scrubbers" class="anchor" href="#scrubbers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SCRUBBERS</h1>
+
+<p>All manned command pods include an embedded CO2 Scrubber that reclaim some of the Oxygen
+  consumed, at the expense of Electric Charge. The scrubber efficiency depend on the
+  technological level of your space agency at time of launch.</p>
+
+<h1>
+<a id="greenhouse" class="anchor" href="#greenhouse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GREENHOUSE</h1>
+
+<p>Greenhouses produce Food in space and on the surface of celestial bodies, even far from the
+  Sun. The growth can be speed up by using Artificial Lighting, at the expense of Electric Charge.</p>
+
+<h1>
+<a id="eva" class="anchor" href="#eva" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EVA</h1>
+
+<p>Kerbals on EVA take some Electric Charge with them and use it to maintain climate control of the
+  suit, if necessary, and to power the headlight. Also they take some Oxygen, but only when outside
+  a breathable atmosphere. Kerbals can die while on EVA. In this unfortunate case, the poor Kerbal's
+  body will be left floating in space.</p>
+
+<h1>
+<a id="malfunctions" class="anchor" href="#malfunctions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MALFUNCTIONS</h1>
+
+<p>Components can malfunction and their specs are reduced. A component never fail completely,
+  but multiple malfunctions can effectively reduce its specs to the point of it being useless.
+  Luckily, Engineers can fix malfunctioned components while on EVA. The manufacturing quality of
+  components can be increased by researching specific technologies.</p>
+
+<h1>
+<a id="signals" class="anchor" href="#signals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SIGNALS</h1>
+
+<p>Science data transmission and remote probe control require a link with the home planet.
+  Celestial bodies block the signal, while other vessels can act as relay. Relay must be enabled
+  per-antenna, as relaying has extra Electric Charge requirements, even in background.
+  Antennas have range and wildly different data transmission costs, that scale with distance.
+  Signal processing can be improved by researching specific technologies, leading to increased range.</p>
+
+<h1>
+<a id="magnetic-storms" class="anchor" href="#magnetic-storms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MAGNETIC STORMS</h1>
+
+<p>Coronal mass ejections from the Sun can hit planets magnetospheres from time to time, causing magnetic
+  storms that disrupt communications with the vessels around the planet for some time. Frequency of the
+  storms as well as time to impact depend on distance of the body from the Sun.</p>
+
+<h1>
+<a id="coherent-background-simulation" class="anchor" href="#coherent-background-simulation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>COHERENT BACKGROUND SIMULATION</h1>
+
+<p>All mechanics described are simulated coherently in background. Also command pods, solar panels,
+  generators, fuel cells, drills, ISRU and SCANsat modules produce and consume resources in background.
+  The stock behaviour for fuel cells, drills and ISRU for unloaded vessels has been completely replaced.</p>
+
+<h1>
+<a id="vessel-monitor" class="anchor" href="#vessel-monitor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VESSEL MONITOR</h1>
+
+<p>A simple gui is available in the space center or in flight. It show the status for vessels and
+  Kerbals, including: battery, food &amp; oxygen levels, scrubber &amp; greenhouse status, signal status,
+  malfunctions, if the vessel is in direct sunlight, and kerbal physical and mental health problems.
+  It also allow to enable and disable warning messages per-vessel, just click on it.</p>
+
+<h1>
+<a id="vessel-planner" class="anchor" href="#vessel-planner" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VESSEL PLANNER</h1>
+
+<p>A simple gui is available in the editor, to help in designing missions. It show the estimated life
+  expectancy of the crew as well as how long will the vessel electric charge last in shadow or sunlight.
+  The estimates are relative to a target body and situation, that can be changed and influence the calculations
+  It support pods, solar panels, generators, fuel cells, active radiators, wheels, drills, ISRU and SCANsat.</p>
+
+<h1>
+<a id="science-tweaks" class="anchor" href="#science-tweaks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SCIENCE TWEAKS</h1>
+
+<p>Early experiments have been rearranged in the tech tree. Data is either transmissibile in full or not
+  at all. Experiments provide full science values. Situations have been tweaked, no more ladder dance.
+  Probes can store data and perform a simple telemetry experiment.</p>
+
+<h1>
+<a id="faqs" class="anchor" href="#faqs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FAQs</h1>
+
+<ul>
+<li>
+<p><strong><em>I think I've founded a bug or any other undesired behaviour</em></strong></p>
+
+<p>Try running the game in the same conditions, but without this mod. If the problem is still present then
+there is high probability this mod wasn't responsible. If that isn't the case, however, please try to
+reproduce the bug consistently. Then, by all means, post a description of the problem in the thread or
+raise an issue on github. Copy of the savegame, log file and list of mods installed are appreciated.</p>
+</li>
+<li>
+<p><strong><em>I think this mod is too hard/easy, I wish this mod would do something different</em></strong></p>
+
+<p>You can suggest rebalance tweaks and any other modification by posting in the thread.</p>
+</li>
+<li>
+<p><strong><em>Is this mod compatible with planet packs and scale changing mods?</em></strong></p>
+
+<p>Yes! This mod make no assumptions about the solar system.</p>
+</li>
+<li>
+<p><strong><em>How can I support Kerbalism in my parts?</em></strong></p>
+
+<p>You can create Scrubbers, Greenhouses, Entertainment and Antenna parts by simply using the respective modules.
+An example of the module values can be found in the ModuleManager patches included in the download.</p>
+</li>
+<li>
+<p><strong><em>How can I support Kerbalism in my mod?</em></strong></p>
+
+<p>Have a look at Hooks.cs source code. Right now there is only support to disable resource consumption for specific
+Kerbals. Other hooks can be added on request, just leave a comment on the thread or raise an issue on github.</p>
+</li>
+</ul>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>REQUIREMENTS</h1>
+
+<ul>
+<li><a href="https://github.com/sarbian/ModuleManager">ModuleManager</a></li>
+</ul>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h1>
+
+<p>This mod is released under the <a href="http://unlicense.org/">Unlicense</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ShotgunNinja/Kerbalism">Kerbalism</a> is maintained by <a href="https://github.com/ShotgunNinja">ShotgunNinja</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
