@@ -423,11 +423,13 @@ public class Signal : MonoBehaviour
   {
     // if, for some reasons, there isn't link data for the vessel, return 'no antenna'
     // note: this for example may happen when a resque mission vessel get enabled
-    link_data ld;
-    if (!instance.links.TryGetValue(v.id, out ld)) ld.status = link_status.no_antenna;
+    // for now, simply assume communication succeeded, bypassing signal processing altogether
+    return new link_data(true, link_status.direct_link, double.MaxValue); // thanks ShotgunNinja
+//    link_data ld;
+//    if (!instance.links.TryGetValue(v.id, out ld)) ld.status = link_status.no_antenna;
 
     // return link status from the cache
-    return ld;
+//    return ld;
   }
 
 
