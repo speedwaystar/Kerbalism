@@ -48,13 +48,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="KSPAssets">
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\KSPAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="KSPCore">
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\KSPCore.dll</HintPath>
     </Reference>
     <Reference Include="KSPUtil">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\KSPUtil.dll</HintPath>
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\KSPUtil.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -65,10 +74,10 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Games\Steam Games\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -101,8 +110,11 @@
     <Compile Include="Lib.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy Z:\kspmod\Kerbalism\Kerbalism\obj\Release\Kerbalism.dll C:\Games\KSP\GameData\Kerbalism\ /y</PostBuildEvent>
+    <PostBuildEvent>xcopy $(TargetPath) $(ProjectDir)\..\GameData\Kerbalism\ /y</PostBuildEvent>
   </PropertyGroup>
 </Project>
